@@ -13,7 +13,7 @@ st.markdown(f"**🌍 위치 추정:** {ipinfo['city']}, {ipinfo['country']}")
 st.write(f"위도: {lat}, 경도: {lon}")
 
 # 2. 날씨 API 요청
-API_KEY = 38074004a1479432e7b285767a9b8cf4
+API_KEY = "38074004a1479432e7b285767a9b8cf4"
 url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_KEY}&units=metric&lang=kr"
 res = requests.get(url).json()
 
